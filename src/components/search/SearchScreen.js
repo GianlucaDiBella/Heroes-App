@@ -29,14 +29,15 @@ export const SearchScreen = ({history}) => {
             <div className='col-5'>
             <h4>Search</h4>
             <hr />
-            <form onSubmit={handleSearch}>
+            <form onSubmit={handleSearch}>        
                 <input 
                     type='text'
-                    placeholder='Find your hero'
+                    placeholder='Search a hero'
                     className='form-control'
                     name ='hero'
                     autoComplete='off'
                     onChange={handleInputChange}
+                    value={q}
                     />
                 <button type='submit'
                     className='btn mt-1 btn-block btn-outline-primary'
